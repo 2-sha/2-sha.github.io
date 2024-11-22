@@ -1,0 +1,1 @@
+# 2sha.tech / 2sha.ru static page
