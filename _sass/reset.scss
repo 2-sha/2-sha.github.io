@@ -2,6 +2,7 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -82,14 +83,15 @@ summary,
 time,
 mark,
 audio,
-video
-  margin: 0
-  padding: 0
-  border: 0
-  font-size: 100%
-  font: inherit
-  vertical-align: baseline
-  text-decoration: none
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,46 +104,50 @@ header,
 hgroup,
 menu,
 nav,
-section
-  display: block
+section {
+  display: block;
+}
 
-body
-  line-height: 1
+body {
+  line-height: 1;
+}
 
 html,
-body
-  height: 100%
+body {
+  height: 100%;
+}
 
 ol,
-ul
-  list-style: none
+ul {
+  list-style: none;
+}
 
 blockquote,
-q 
-  quotes: none
+q {
+  quotes: none;
+}
 
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after 
-  content: ''
-  content: none
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+b {
+  font-weight: bold;
+}
 
-table 
-  border-collapse: collapse
-  border-spacing: 0
+i {
+  font-style: italic;
+}
 
-
-b 
-  font-weight: bold
-
-
-i 
-  font-style: italic
-
-
-u 
-  text-decoration: underline
-
+u {
+  text-decoration: underline;
+}
