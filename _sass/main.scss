@@ -1,4 +1,4 @@
-@use 'reset';
+@import 'reset';
 
 $max1400: "(max-width: 1400px)";
 $max1150: "(max-width: 1150px)";
@@ -84,8 +84,34 @@ $max980: "(max-width: 980px)";
   }
 }
 
+@property --x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+.loading-block {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 0%, #fff var(--x));
+  opacity: 1;
+  animation: vignetteFade 1s forwards .5s ease-in-out;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 @keyframes vignetteFade {
-  100% {
+  to {
     --x: 100%;
     opacity: 0;
     display: none;
@@ -101,16 +127,4 @@ $max980: "(max-width: 980px)";
   50% {
     bottom: 6px;
   }
-}
-
-.loading-block {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, transparent 0%, #fff var(--x));
-  opacity: 1;
-  animation: vignetteFade 1s forwards 0.5s ease-in-out;
 }

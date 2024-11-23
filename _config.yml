@@ -1,0 +1,19 @@
+title: Anton Khalitov
+email: khalitov.anton@yandex.ru
+description: Software engineer at Yandex
+baseurl: ""
+url: "https://2sha.tech"
+logo: /assets/images/2sha.png
+image: /assets/images/2sha.png
+
+social:
+  name: Anton Khalitov
+  links:
+    - https://www.instagram.com/_2sha_/
+    - https://t.me/an_2sha
+    - https://x.com/_2sha_
+    - https://github.com/2-sha
+    - https://www.facebook.com/mr.a.halitov/
+
+plugins:
+  - jekyll-seo-tag
