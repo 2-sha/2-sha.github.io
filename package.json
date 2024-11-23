@@ -1,0 +1,14 @@
+{
+  "name": "2sha-site",
+  "version": "1.0.0",
+  "description": "2sha website",
+  "main": "index.js",
+  "scripts": {
+    "build": "stylus src/index.styl --out build --compress"
+  },
+  "author": "2sha",
+  "license": "ISC",
+  "devDependencies": {
+    "stylus": "^0.64.0"
+  }
+}
